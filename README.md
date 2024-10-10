@@ -13,8 +13,8 @@ This is a simple cli tool written in Go that starts a http server to handle requ
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/head-crash/ratter.git
+   cd ratter
    ```
 
 2. Build the application:
