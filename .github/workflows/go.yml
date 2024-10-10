@@ -26,4 +26,4 @@ jobs:
       run: GOOS=darwin GOARCH=arm64 go build -v -o bin/ratter main.go
 
     - name: Build Linux 64
-      run: GOOS=linux GOARCH=amd4 go build -v -o bin/ratter main.go
+      run: GOOS=linux GOARCH=amd64 go build -v -o bin/ratter main.go
