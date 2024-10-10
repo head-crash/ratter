@@ -1,4 +1,4 @@
-# Random Error Response Server
+# Random REST Test Responser
 
 This is a simple HTTP server written in Go that handles requests with a specified URL prefix and randomly returns either a success or an error response. It is configurable via command-line flags.
 
