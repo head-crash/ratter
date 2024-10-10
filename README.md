@@ -1,6 +1,6 @@
-# Random REST Test Responser
+# RATTER - Random REST Test Responser
 
-This is a simple HTTP server written in Go that handles requests with a specified URL prefix and randomly returns either a success or an error response. It is configurable via command-line flags.
+This is a simple cli tool written in Go that starts a http server to handle requests with a specified path prefix and http method. It randomly returns either a success or an error response. It is configurable via command-line flags.
 
 ## Features
 
