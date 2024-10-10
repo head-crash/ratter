@@ -20,7 +20,37 @@ This is a simple cli tool written in Go that starts a http server to handle requ
 2. Build the application:
 
    ```bash
-   go build -o random-error-server main.go
+   go build -o bin/ratter main.go
+   ```
+
+Cross compile for Windows 64-bit
+
+   ```bash
+   GOOS=windows GOARCH=amd64 go build -o bin/ratter.exe main.go
+   ```
+
+Cross compile for Windows 32-bit
+
+   ```bash
+   GOOS=windows GOARCH=386 go build -o bin/ratter.exe main.go
+   ```
+
+Cross compile for MacOS 64-bit
+
+   ```bash
+   GOOS=darwin GOARCH=amd64 go build -o bin/ratter main.go
+   ```
+
+Cross compile for MacOS ARM (silicon M1+)
+
+   ```bash
+   GOOS=darwin GOARCH=arm64 go build -o bin/ratter main.go
+   ```
+
+Cross compile for Linux 64-bit
+
+   ```bash
+   GOOS=linux GOARCH=amd64 go build -o bin/ratter main.go
    ```
 
 ## Usage
