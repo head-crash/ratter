@@ -27,3 +27,21 @@ jobs:
 
     - name: Build Linux 64
       run: GOOS=linux GOARCH=amd64 go build -v -o bin/ratter main.go
+
+    - name: Upload Windows 64 Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ratter-windows-64
+        path: bin/ratter.exe
+
+    - name: Upload MacOS ARM Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ratter-macos-arm
+        path: bin/ratter
+
+    - name: Upload Linux 64 Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ratter-linux-64
+        path: bin/ratter
