@@ -57,19 +57,19 @@ Cross compile for Linux 64-bit
 
 Run the server with the following command-line flags:
 
-- `-valid-prefix`: The valid URL prefix for handling requests.
+- `--valid-prefix`: The valid URL prefix for handling requests.
 
 Optional:
 
-- `-port`: The port to run the server on (default: "8080").
-- `-method`: The HTTP method to handle (default: "POST").
-- `-check-path-id`: The error message to return if the path ID is missing after the valid prefix. (default: nil)
-- `-error-message`: The error message to return on failure (default: "Random error response").
+- `--port`: The port to run the server on (default: "8080").
+- `--method`: The HTTP method to handle (default: "POST").
+- `--check-path-id`: The error message to return if the path ID is missing after the valid prefix. (default: nil)
+- `--error-message`: The error message to return on failure (default: "Random error response").
 
 Example:
 
 ```bash
-./random-error-server -valid-prefix="/api" -error-message="An error occurred" -port="8080" -method="POST" 
+./ratter --valid-prefix="/api" --error-message="An error occurred" --port="8080" --method="POST" 
 ```
 
 ## How It Works
